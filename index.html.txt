@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Market Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        .widget-container { display: flex; flex-wrap: wrap; justify-content: center; }
+        .widget { margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Live Market Dashboard - ShareMarketupdates</h1>
+    <div class="widget-container">
+        <!-- Nifty 50 -->
+        <div class="widget">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-ticker.js" async>
+                {
+                  "symbol": "NSE:NIFTY",
+                  "width": 350,
+                  "height": 220,
+                  "locale": "en",
+                  "colorTheme": "light",
+                  "isTransparent": false
+                }
+                </script>
+            </div>
+        </div>
+        <!-- BSE Sensex -->
+        <div class="widget">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-ticker.js" async>
+                {
+                  "symbol": "BSE:SENSEX",
+                  "width": 350,
+                  "height": 220,
+                  "locale": "en",
+                  "colorTheme": "light",
+                  "isTransparent": false
+                }
+                </script>
+            </div>
+        </div>
+        <!-- Gold -->
+        <div class="widget">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-ticker.js" async>
+                {
+                  "symbol": "XAUUSD",
+                  "width": 350,
+                  "height": 220,
+                  "locale": "en",
+                  "colorTheme": "light",
+                  "isTransparent": false
+                }
+                </script>
+            </div>
+        </div>
+        <!-- INR/USD -->
+        <div class="widget">
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-ticker.js" async>
+                {
+                  "symbol": "USDINR",
+                  "width": 350,
+                  "height": 220,
+                  "locale": "en",
+                  "colorTheme": "light",
+                  "isTransparent": false
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+    <p>Market updates synced with NSE/BSE hours (9:15 AM - 3:30 PM IST). Check <a href="https://www.reddit.com/r/ShareMarketupdates/">r/ShareMarketupdates</a> for discussions!</p>
+</body>
+</html>
